@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Goldman App</title>
+<style>
+ :root { --bg:#fff; --fg:#14171f; --muted:#5b6170; --line:#e3e5ea; }
+ @media (prefers-color-scheme: dark) { :root { --bg:#0f1115; --fg:#eceef2; --muted:#a0a6b3; --line:#262a33; } }
+ body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.6 -apple-system, system-ui, Segoe UI, Roboto, sans-serif; }
+ main { max-width:720px; margin:0 auto; padding:48px 16px 64px; }
+ h1 { font-size:2rem; margin:0 0 4px; } h2 { font-size:1.15rem; margin:32px 0 8px; }
+ p, li { color:var(--fg); } .sub { color:var(--muted); margin:0 0 24px; }
+ section { border-top:1px solid var(--line); } footer { margin-top:40px; color:var(--muted); font-size:.9rem; }
+ a { color:inherit; }
+</style>
+</head>
+<body>
+<main>
+ <h1>Goldman App</h1>
+ <p class="sub">A private personal-finance tool for Benjamin Goldman.</p>
+
+ <section>
+  <h2>What it is</h2>
+  <p>Goldman App is a private, single-user application. It connects Benjamin Goldman's own bank, credit card and investment accounts through Plaid, so he can keep his household budget, bookkeeping categories and net worth in one place. It is not offered to the public, and it has no other users.</p>
+ </section>
+
+ <section id="data">
+  <h2>Data accessed and how it is used</h2>
+  <ul>
+   <li><strong>Accessed:</strong> account names and masked numbers, balances, posted transactions, and, for investment accounts, holdings and investment activity.</li>
+   <li><strong>Used for:</strong> categorizing spending and income, budgeting, reconciling against statements, and tracking net worth. The account owner uses it for nothing else.</li>
+   <li><strong>Never:</strong> sold, shared with third parties, used for advertising, or used to move money. The app is read-only and cannot initiate payments or transfers.</li>
+  </ul>
+ </section>
+
+ <section id="privacy">
+  <h2>Privacy</h2>
+  <p>Financial data is stored only in the account owner's private Google workspace. Access is limited to the owner and the owner's own automation. Bank login credentials are entered only in the institution's or Plaid's own window. The app never sees or stores them. Access tokens are kept in an owner-only secret store on the owner's computer, and are never published or logged. The owner can disconnect any account at any time, through the <a href="https://my.plaid.com">Plaid Portal</a> or by asking the app to remove the connection.</p>
+ </section>
+
+ <section id="security">
+  <h2>Security</h2>
+  <ul>
+   <li>Data travels only over encrypted (TLS) connections.</li>
+   <li>Access to the data is read-only, and the app stores the minimum it needs.</li>
+   <li>Secrets are never placed in source code, logs or reports.</li>
+   <li>Access is restricted to the single owner.</li>
+  </ul>
+ </section>
+
+ <section id="contact">
+  <h2>Contact</h2>
+  <p>Privacy or security questions: <a href="mailto:hurricane.true@gmail.com">hurricane.true@gmail.com</a></p>
+ </section>
+
+ <footer>© 2026 Benjamin Goldman · Goldman App</footer>
+</main>
+</body>
+</html>
